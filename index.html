@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOUR NAME — Academic Portfolio</title>
+  <meta name="description" content="Researcher in GeoAI, EV charging, and sustainability. Portfolio of publications, projects, teaching, and service." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>">
+  <!-- Simple, accessible, print-friendly styling (no frameworks) -->
+  <style>
+    :root{
+      --bg:#0b0f14; --fg:#e6edf3; --muted:#9fb3c8; --card:#111823; --acc:#3aa3ff; --acc2:#7ee787;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --maxw:1100px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f8fafc; --fg:#0f172a; --muted:#475569; --card:#ffffff; --acc:#2563eb; --acc2:#16a34a; }
+    }
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;}
+    a{color:var(--acc);text-decoration:none}
+    a:hover,a:focus{ text-decoration:underline }
+    .wrap{max-width:var(--maxw);margin:auto;padding:48px 20px}
+    header{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;margin-bottom:28px}
+    header img{width:120px;height:120px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow)}
+    h1{margin:0;font-size:2rem}
+    .tag{display:inline-block;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+    nav{position:sticky;top:0;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.05);z-index:10}
+    nav .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+    .links{display:flex;flex-wrap:wrap;gap:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.15);padding:8px 12px;border-radius:999px}
+    .grid{display:grid;gap:16px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    section{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    section h2{margin:0 0 8px 0;font-size:1.25rem}
+    .pill{display:inline-block;margin-right:8px;margin-top:6px;padding:4px 10px;border-radius:999px;background:rgba(122,162,247,.15);color:var(--fg);font-size:.85rem}
+    .meta{color:var(--muted);font-size:.95rem}
+    footer{color:var(--muted);text-align:center;padding:32px}
+    /* Print: compact, black-on-white */
+    @media print{
+      :root{--bg:#fff;--fg:#000;--card:#fff}
+      nav, .btn, .pill { display:none !important }
+      body{font-size:12px}
+      section{break-inside:avoid}
+    }
+    /* Skip link */
+    .skip{position:absolute;left:-9999px}
+    .skip:focus{left:8px;top:8px;background:#fff;color:#000;padding:8px;border-radius:6px;z-index:999}
+  </style>
+  <!-- Basic JSON‑LD for a Person (tweak values) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "YOUR NAME",
+    "affiliation": {"@type": "Organization", "name": "University of Georgia"},
+    "jobTitle": "PhD Candidate",
+    "url": "https://your-domain.com",
+    "email": "mailto:you@uga.edu",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=XXXX",
+      "https://orcid.org/0000-0000-0000-0000",
+      "https://github.com/yourhandle"
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav>
+  <div class="wrap">
+    <strong>YOUR NAME</strong>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#talks">Talks</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="cv/Farnoosh_Roozkhosh_CV.pdf">Download CV</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap" id="main">
+  <header>
+    <img src="img/profile.jpg" alt="Portrait of YOUR NAME" />
+    <div>
+      <h1>YOUR NAME <span class="tag">GeoAI • EV Charging • Sustainability</span></h1>
+      <p class="meta">PhD Candidate, Department of Geography, University of Georgia • NSF DDRI Awardee</p>
+      <p>My research sits at the intersection of geospatial data science, human mobility, and circular energy systems. I build scalable pipelines for EV user detection and model lithium‑ion battery recycling systems with LCA and system dynamics.</p>
+      <div>
+        <span class="pill">GeoAI</span>
+        <span class="pill">EV Infrastructure</span>
+        <span class="pill">Battery Recycling</span>
+        <span class="pill">LCA & SD</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid" style="grid-template-columns: 1.2fr .8fr; gap:16px; align-items:start">
+    <section id="highlights">
+      <h2>Highlights</h2>
+      <ul>
+        <li>NSF DDRI #2515683 for EV adoption modeling</li>
+        <li>100TB mobile‑ping pipeline for EV user detection</li>
+        <li>Chile‑centric LIB recycling SD–LCA model</li>
+        <li>Organizer: AAG 2026 GeoAI for E‑Mobility</li>
+      </ul>
+    </section>
+
+    <section id="contact-mini">
+      <h2>Quick Links</h2>
+      <p><strong>Email:</strong> <span id="em"></span></p>
+      <p><a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> · <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a> · <a href="https://github.com/yourhandle">GitHub</a> · <a href="https://www.linkedin.com/in/yourhandle">LinkedIn</a></p>
+    </section>
+  </div>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ol>
+      <li><strong>Bridging Data Gaps for EV Demand Estimation: A Transfer Learning Approach</strong>. <em>Transportation Research Part C</em>, 2025 (under review). [<a href="#">preprint</a>] [<a href="#">code</a>]</li>
+      <li><strong>How Do People Charge Their Electric Vehicles? A Multidisciplinary Review</strong>. <em>Journal of Transport Geography</em>, 2024. [<a href="#">publisher</a>]</li>
+      <li><strong>Evaluating Hydrometallurgical Recycling Strategies for Li‑ion Batteries</strong>. <em>Resources, Conservation & Recycling</em>, 2024. [<a href="#">preprint</a>]</li>
+    </ol>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="cards">
+      <article>
+        <h3>From Pings to Plugs: GeoAI Pipeline for EV Users</h3>
+        <p class="meta">Python · BallTree · DBSCAN · AFDC · AWS S3</p>
+        <p>End‑to‑end pipeline to identify EV sessions from high‑volume mobile‑location data; connector‑aware dwell rules and speed heuristics; validates against GA EV registrations.</p>
+        <p><a href="#">Code</a> · <a href="#">Poster</a></p>
+      </article>
+      <article>
+        <h3>LIB Recycling SD–LCA (Chile)</h3>
+        <p class="meta">Vensim · LCA · System Dynamics</p>
+        <p>Couples stock‑flow dynamics with midpoint/end‑point LCA to compare hydrometallurgy vs pyrometallurgy under policy scenarios and collection constraints.</p>
+        <p><a href="#">Model</a> · <a href="#">Preprint</a></p>
+      </article>
+      <article>
+        <h3>EV Charging Supply–Demand Mismatch</h3>
+        <p class="meta">GeoStats · Spatial Lag · County‑Level</p>
+        <p>Quantifies connector‑specific energy gaps and socioeconomic correlates; informs siting priorities for equitable EVCS rollout.</p>
+        <p><a href="#">Paper</a> · <a href="#">Data</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li><strong>GEOG 6470L: Advanced Geospatial Lab</strong> — Instructor of Record, Spring 2025</li>
+      <li><strong>GIS for Transportation</strong> — Guest lectures on EV infrastructure analytics</li>
+    </ul>
+  </section>
+
+  <section id="talks">
+    <h2>Talks & Service</h2>
+    <ul>
+      <li>Organizer & Chair — AAG 2026 “Geospatial Analysis and GeoAI for E‑Mobility”</li>
+      <li>Reviewer — TRC, JTG, RCR</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For collaborations, speaking, or postdoc opportunities, email me or find me on the platforms above. I’m open to joint projects on EV adoption modeling, geospatial ML, and battery circularity.</p>
+  </section>
+
+  <footer>
+    © <span id="y"></span> YOUR NAME · <a href="mailto:you@uga.edu">you@uga.edu</a> · Last updated: <span id="lastmod"></span>
+  </footer>
+</div>
+
+<script>
+  // Simple email obfuscation to reduce scraping
+  const u = "you", d = "uga", t = "edu";
+  const em = u+"@"+d+"."+t; document.getElementById("em").textContent = em;
+  document.getElementById("y").textContent = new Date().getFullYear();
+  document.getElementById("lastmod").textContent = new Date(document.lastModified).toLocaleDateString();
+</script>
+
+</body>
+</html>
