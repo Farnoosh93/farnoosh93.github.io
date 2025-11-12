@@ -1,1 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farnoosh Roozkhosh — Academic Portfolio</title>
+  <meta name="description" content="PhD candidate at UGA Geography. GeoAI for EV charging behavior, EVCS planning, and spatial health. Publications, projects, teaching, and service." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>">
+  <style>
+    :root{
+      --bg:#0b0f14; --fg:#e6edf3; --muted:#9fb3c8; --card:#111823; --acc:#3aa3ff; --acc2:#7ee787;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+      --maxw:1100px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f8fafc; --fg:#0f172a; --muted:#475569; --card:#ffffff; --acc:#2563eb; --acc2:#16a34a; }
+    }
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;}
+    a{color:var(--acc);text-decoration:none}
+    a:hover,a:focus{ text-decoration:underline }
+    .wrap{max-width:var(--maxw);margin:auto;padding:48px 20px}
+    header{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;margin-bottom:28px}
+    header img{width:120px;height:120px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow)}
+    h1{margin:0;font-size:2rem}
+    .tag{display:inline-block;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+    nav{position:sticky;top:0;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.05);z-index:10}
+    nav .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+    .links{display:flex;flex-wrap:wrap;gap:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.15);padding:8px 12px;border-radius:999px}
+    .grid{display:grid;gap:16px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    section{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    section h2{margin:0 0 8px 0;font-size:1.25rem}
+    .pill{display:inline-block;margin-right:8px;margin-top:6px;padding:4px 10px;border-radius:999px;background:rgba(122,162,247,.15);color:var(--fg);font-size:.85rem}
+    .meta{color:var(--muted);font-size:.95rem}
+    footer{color:var(--muted);text-align:center;padding:32px}
+    @media print{
+      :root{--bg:#fff;--fg:#000;--card:#fff}
+      nav, .btn, .pill { display:none !important }
+      body{font-size:12px}
+      section{break-inside:avoid}
+    }
+    .skip{position:absolute;left:-9999px}
+    .skip:focus{left:8px;top:8px;background:#fff;color:#000;padding:8px;border-radius:6px;z-index:999}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Farnoosh Roozkhosh",
+    "affiliation": {"@type": "Organization", "name": "University of Georgia"},
+    "jobTitle": "PhD Candidate",
+    "url": "https://farnoosh93.github.io",
+    "email": "mailto:fr41789@uga.edu",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=6yBI3HkAAAAJ&hl=en",
+      "https://www.linkedin.com/in/farnoosh-roozkhosh-0674b896/",
+      "https://github.com/farnoosh93"
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav>
+  <div class="wrap">
+    <strong>Farnoosh Roozkhosh</strong>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#talks">Talks</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="cv/Farnoosh_Roozkhosh_CV_a.pdf">Download CV</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap" id="main">
+  <header>
+    <img src="img/profile.jpg" alt="Portrait of Farnoosh Roozkhosh" />
+    <div>
+      <h1>Farnoosh Roozkhosh <span class="tag">GeoAI • EV Charging • GIS</span></h1>
+      <p class="meta">PhD Candidate, Department of Geography, University of Georgia • NSF DDRI Awardee</p>
+      <p>I develop GeoAI methods to understand EV users’ charging behavior from passively collected mobility traces and to plan equitable EV charging infrastructure. My work also spans spatial health analytics and transportation safety.</p>
+      <div>
+        <span class="pill">GeoAI</span>
+        <span class="pill">EV Infrastructure</span>
+        <span class="pill">Transfer Learning</span>
+        <span class="pill">Spatial Analysis</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid" style="grid-template-columns: 1.2fr .8fr; gap:16px; align-items:start">
+    <section id="highlights">
+      <h2>Highlights</h2>
+      <ul>
+        <li>NSF DDRI for dissertation on EV charging behavior</li>
+        <li>EVCS demand prediction across states via transfer learning</li>
+        <li>Instructor of Record & multiple TA roles at UGA</li>
+      </ul>
+    </section>
+
+    <section id="contact-mini">
+      <h2>Quick Links</h2>
+      <p><strong>Email:</strong> <span id="em"></span></p>
+      <p><a href="https://scholar.google.com/citations?user=6yBI3HkAAAAJ&hl=en">Google Scholar</a> · <a href="https://www.linkedin.com/in/farnoosh-roozkhosh-0674b896/">LinkedIn</a> · <a href="https://github.com/farnoosh93">GitHub</a></p>
+    </section>
+  </div>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <ol>
+      <li><strong>Bridging Data Gaps for EV Demand Estimation: A Transfer Learning Approach</strong>. <em>Journal of Transport Geography</em>, revised (preprint), 2025.</li>
+      <li><strong>From theory to deep learning: Understanding the impact of geographic context factors on traffic violations</strong>. <em>Computers, Environment and Urban Systems</em>, 2025.</li>
+      <li><strong>Geospatial Analysis of Dementia Mortality and its Associations with Demographic and Socioeconomic Factors</strong>. <em>Journal of Alzheimer's Disease Reports</em>, 2024.</li>
+      <li><strong>Encounter Network and Its Application to Studying Epidemic Spread through Public Transportation Networks</strong>. <em>Transportation Research Record</em>, 2024.</li>
+      <li><strong>Examining the potential of pharmacies to expand PrEP access along Georgia’s fixed-route public transit: A geospatial analysis</strong>. <em>Journal of the American Pharmacists Association</em>, 2024.</li>
+      <li><strong>Accessibility, Walkability, Mixed Land Uses… Space Syntax</strong>. <em>IRSPSD</em>, 2022.</li>
+      <li><strong>Comparison of walkability in different urban districts using space syntax</strong>. <em>Journal of Architecture and Urbanism</em>, 2020.</li>
+      <li><strong>Contributions and risks of AI in building smarter cities</strong>. <em>Energies</em>, 2020.</li>
+    </ol>
+    <p class="meta">Full list and links on <a href="https://scholar.google.com/citations?user=6yBI3HkAAAAJ&hl=en">Google Scholar</a>.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="cards">
+      <article>
+        <h3>From Pings to Plugs: EV User Inference</h3>
+        <p class="meta">Python · GeoAI · Transfer Learning</p>
+        <p>Robust pipeline that infers public-charging EV users from mobility traces with car-like speed heuristics and connector-aware dwell rules; validated on Georgia datasets.</p>
+      </article>
+      <article>
+        <h3>EVCS Demand Prediction Across States</h3>
+        <p class="meta">Time Series · ML · Policy</p>
+        <p>Bridges data gaps between states (e.g., Colorado → Minnesota) using transfer learning to forecast station demand and energy needs.</p>
+      </article>
+      <article>
+        <h3>Spatial Health & Transit Accessibility</h3>
+        <p class="meta">GIS · Public Health</p>
+        <p>Quantifies access to PrEP via pharmacies along fixed-route transit and evaluates demographic disparities.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li><strong>Instructor of Record:</strong> Introduction to Physical Geography (UGA)</li>
+      <li><strong>Teaching Assistant:</strong> Advanced Geospatial Analysis; Introduction to GIS (UGA)</li>
+      <li><strong>Lecturer (U. of Bojnourd):</strong> Urban Comprehension & Presentation; Quantitative Models; Specialized English</li>
+    </ul>
+  </section>
+
+  <section id="talks">
+    <h2>Conferences & Presentations</h2>
+    <ul>
+      <li>AAG Annual Meeting (2025): EV user identification via mobile phone location data</li>
+      <li>TRB 104th (2025): Transfer learning for EVCS demand (poster)</li>
+      <li>CAGIS+UCGIS (2024): EV charging station demand prediction</li>
+      <li>AAG (2024): Time-series and ML models for EV demand</li>
+      <li>GIScience (2023): Assessing epidemic spreading with encounter networks</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Open to collaborations and postdoc opportunities in GeoAI, EV infrastructure, and spatial data science.</p>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Farnoosh Roozkhosh · <a href="mailto:fr41789@uga.edu">fr41789@uga.edu</a> · Last updated: <span id="lastmod"></span>
+  </footer>
+</div>
+
+<script>
+  const u = "fr41789", d = "uga", t = "edu";
+  const em = u+"@"+d+"."+t; document.getElementById("em").textContent = em;
+  document.getElementById("y").textContent = new Date().getFullYear();
+  document.getElementById("lastmod").textContent = new Date(document.lastModified).toLocaleDateString();
+</script>
+
+</body>
+</html>
 
